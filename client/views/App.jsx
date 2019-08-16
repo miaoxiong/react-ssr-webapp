@@ -10,6 +10,7 @@ export default class App extends Component {
       <div key="banner">
         <Link to="/">首页</Link>
         <Link to="/detail">详情</Link>
+        <Link to="/test">测试api</Link>
       </div>,
       <Routes key="routes" />,
     ]

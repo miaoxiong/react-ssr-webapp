@@ -4,14 +4,14 @@ import { BrowserRouter } from 'react-router-dom'
 import { AppContainer } from 'react-hot-loader'; // 设置这里
 import { Provider } from 'mobx-react';
 import App from './views/App'
-import appState from './store/app-state'
+import AppState from './store/app-state'
 
 const root = document.getElementById('root')
 
 const render = Comp => {
   ReactDOM.render(
     <AppContainer>
-      <Provider appState={appState}>
+      <Provider appState={new AppState()}>
         <BrowserRouter>
           <Comp key="app" />
         </BrowserRouter>

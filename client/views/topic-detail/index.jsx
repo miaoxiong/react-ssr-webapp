@@ -20,7 +20,7 @@ class Detail extends Component {
       <div>
         <h3>topic detail</h3>
         <input onChange={this.changeName} />
-        <h5>{appState.msg}</h5>
+        <div>{appState.msg}</div>
       </div>
     )
   }
